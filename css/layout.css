@@ -1,0 +1,112 @@
+/* MOBILE FIRST DESIGN */
+#a {
+    background-color: #00fdff;
+    height: 75px;
+}
+
+#b {
+    background-color: #66ff33;
+    height: 150px;
+}
+
+#c {
+    background-color: #ffff00;
+    height: 125px;
+}
+
+#d {
+    background-color: #cc33ff;
+    height: 125px;
+}
+
+#a,
+#b,
+#c,
+#d {
+    display: block;
+    max-width: 100%;
+}
+
+#e-f {
+    display: flex;
+}
+
+#e {
+    background-color: #ff3300;
+    height: 250px;
+    flex-grow: 1;
+}
+
+#f {
+    background-color: #0066ff;
+    height: 250px;
+    flex-grow: 1;
+}
+
+#g-h {
+    display: flex;
+}
+
+#g {
+    background-color: #cc66ff;
+    height: 250px;
+    flex-grow: 1;
+}
+
+#h {
+    background-color: #ffff66;
+    height: 250px;
+    flex-grow: 1;
+}
+
+#i {
+    background-color: #99ffcc;
+    height: 80px;
+}
+
+/* DESKTOP DESIGN */
+@media screen and (min-width: 800px) and (max-width: 960px) {
+    #main {
+        display: flex;
+    }
+
+    #body {
+        flex-grow: 4;
+        display: flex;
+        flex-direction: column;
+        width: 750px;
+    }
+
+    .row-one {
+        display: flex;
+        width: 100%;
+    }
+
+    .row-two {
+        display: flex;
+        width: 100%;
+    }
+
+    #c,
+    #d {
+        flex-grow: 1;
+    }
+
+    #e-f,
+    #g-h {
+        flex-grow: 1;
+    }
+
+    #e, 
+    #f, 
+    #g, 
+    #h {
+        width: 190px;
+        height: 250px;
+    }
+
+    #i {
+        width: 100%;
+        height: 150px;
+    }
+}
